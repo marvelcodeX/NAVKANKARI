@@ -1,7 +1,7 @@
 import global_config as g
 import pretty_print as pp
 from state import State
-from playsound import playsound
+#from playsound import playsound
 import heuristic_state_functions as h
 import sys
 import human_play
@@ -33,11 +33,11 @@ def check_if_over(state):
 	if g.PHASE != 'INIT':
 		if h.allPlayerPiecesClosed(state,'B') or h.getNumberOfPlayerPieces(state,'B') < 3:
 			print('=========================CONGRATULATIONS, YOU WIN!=========================')
-			playsound(g.YOUWINSOUND)
+			#playsound(g.YOUWINSOUND)
 			sys.exit()
 		if h.allPlayerPiecesClosed(state, 'W') or h.getNumberOfPlayerPieces(state, 'W') < 3:
 			print('===========================YOU LOSE!==========================')
-			playsound(g.YOULOSESOUND)
+			#playsound(g.YOULOSESOUND)
 			sys.exit()
 
 def check_counter_fly_plays(state):
