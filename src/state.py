@@ -24,7 +24,7 @@ class State(object):
 		self.isLoserBlack = (not loserIsWhite)
 		return True
 
-	def getTerminal(self):
+	def getTerminal(self):           #this will execute in the terminal, change that
 		if self.isLoserBlack: return -g.MAXIMUM
 		else: return g.MAXIMUM
 

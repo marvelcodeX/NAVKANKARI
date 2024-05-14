@@ -1,3 +1,5 @@
+#not needed cause this is for the board
+
 def ch(char):
 	if len(char) == 1:
 		return char + ' '
